@@ -7,7 +7,7 @@
 #SBATCH --cpus-per-task=2
 #SBATCH --time=0-10:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/baseline_%A_%a.out
-#SBATCH --array=7
+#SBATCH --array=1-17
 
 param_store=./arguments_baseline.txt
 
