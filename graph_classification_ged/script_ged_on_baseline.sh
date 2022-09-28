@@ -21,5 +21,5 @@ module load Python/3.9.5-GCCcore-10.3.0.lua
 cd $HOME/graph_library/graph_classification/graph-classification-ged/
 source venv/bin/activate
 
-srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --n_cores 8 --save_predictions --save_distances --folder_results $HOME/graph_library/results/$dataset_save/baseline -v
+srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --n_cores 8 --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/baseline -v
 
