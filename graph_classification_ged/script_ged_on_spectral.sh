@@ -3,13 +3,13 @@
 #SBATCH --mail-user=anthony.gillioz@inf.unibe.ch
 #SBATCH --mail-type=end,fail
 
-#SBATCH --mem-per-cpu=20G
-#SBATCH --cpus-per-task=2
-#SBATCH --time=0-10:00:00
-#SBATCH --output=/storage/homefs/ag21k209/neo_slurms/spectral_full_%A_%a.out
+#SBATCH --mem-per-cpu=30G
+#SBATCH --cpus-per-task=10
+#SBATCH --time=2-23:00:00
+#SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_ged_on_spectral_%A_%a.out
 #SBATCH --array=1-680
 
-param_store=./arguments_spectral_reduction_full.txt
+param_store=./arguments_ged_on_spectral_full.txt
 
 # Get first argument
 dataset_name=$(cat $param_store | awk -v var=$SLURM_ARRAY_TASK_ID 'NR==var {print $1}')
@@ -22,8 +22,8 @@ merging_method=$(cat $param_store | awk -v var=$SLURM_ARRAY_TASK_ID 'NR==var {pr
 # Put your code below this line
 module load Workspace_Home
 module load Python/3.9.5-GCCcore-10.3.0.lua
-cd $HOME/graph_library/graph_reduction/graph-reduction-spectral
+cd $HOME/graph_library/graph_classification/graph-classification-ged/
 source venv/bin/activate
 
-srun python main.py --dataset $dataset_name --root_dataset $SCRATCH/tmp/ --split_by_cc --embedding_algorithm spectral --dim_embedding $dimension --clustering_algorithm $clustering_algo --reduction_factor $reduction --node_merging_method $merging_method --folder_results $SCRATCH/data/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension -v
+srun python main.py --root_dataset $SCRATCH/data/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension --n_cores 8 --save_predictions --save_distances --folder_results $HOME/graph_library/results/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension -v
 
