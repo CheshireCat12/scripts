@@ -25,5 +25,5 @@ source venv/bin/activate
 
 for i in 183 929 1195 2489 2764
 do
-   srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --n_cores 8 --seed $i --save_gt_labels --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/baseline$i -v
+   srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --n_cores 8 --seed $i --save_gt_labels --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/baseline/$i -v
 done
