@@ -4,10 +4,10 @@
 #SBATCH --mail-type=end,fail
 
 #SBATCH --mem-per-cpu=20G
-#SBATCH --cpus-per-task=5
+#SBATCH --cpus-per-task=10
 #SBATCH --time=0-10:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_gk_SP_on_spectral_small_%A_%a.out
-#SBATCH --array=1-440
+#SBATCH --array=361-400
 
 param_store=./arguments_gk_spectral_small.txt
 

@@ -5,7 +5,7 @@
 
 #SBATCH --mem-per-cpu=20G
 #SBATCH --cpus-per-task=2
-#SBATCH --time=0-10:00:00
+#SBATCH --time=0-05:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_gk_WL_on_spectral_small_%A_%a.out
 #SBATCH --array=1-440
 
