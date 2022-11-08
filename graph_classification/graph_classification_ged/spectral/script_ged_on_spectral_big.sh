@@ -9,7 +9,7 @@
 #SBATCH --qos=job_epyc2_long
 #SBATCH --time=12-00:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_ged_on_spectral_big_%A_%a.out
-#SBATCH --array=36-70
+#SBATCH --array=9-50
 
 param_store=./arguments_ged_on_spectral_big.txt
 
