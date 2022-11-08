@@ -4,10 +4,10 @@
 #SBATCH --mail-type=end,fail
 
 #SBATCH --mem-per-cpu=40G
-#SBATCH --cpus-per-task=10
-#SBATCH --time=2-23:00:00
-#SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_gk_SP_on_baseline_big_%A_%a.out
-#SBATCH --array=1-6
+#SBATCH --cpus-per-task=20
+#SBATCH --time=4-00:00:00
+#SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_gk_on_baseline_big_%A_%a.out
+#SBATCH --array=1-4
 
 param_store=./arguments_gk_baseline_big.txt
 
@@ -21,5 +21,6 @@ module load Python/3.9.5-GCCcore-10.3.0.lua
 cd $HOME/graph_library/graph_classification/graph-classification-kernel/
 source venv/bin/activate
 
-srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --graph_kernel SP --n_cores 10 --save_gt_labels --save_predictions --folder_results $HOME/graph_library/results/gk_SP_classification/$dataset_save/baseline -v
+srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --graph_kernel SP --n_cores 20 --seed 1 --save_gt_labels --save_predictions --folder_results $HOME/graph_library/results/gk_SP_classification/$dataset_save/baseline/1 -v
 
+srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --graph_kernel WL --n_cores 20 --seed 1 --save_gt_labels --save_predictions --folder_results $HOME/graph_library/results/gk_WL_classification/$dataset_save/baseline/1 -v

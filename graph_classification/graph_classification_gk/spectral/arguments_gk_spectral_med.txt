@@ -1,3 +1,13 @@
+COLLAB COLLAB 2 2 kmeans sum
+COLLAB COLLAB 2 2 agglomerative sum
+COLLAB COLLAB 3 2 kmeans sum
+COLLAB COLLAB 3 2 agglomerative sum
+COLLAB COLLAB 4 2 kmeans sum
+COLLAB COLLAB 4 2 agglomerative sum
+COLLAB COLLAB 5 2 kmeans sum
+COLLAB COLLAB 5 2 agglomerative sum
+COLLAB COLLAB 8 2 kmeans sum
+COLLAB COLLAB 8 2 agglomerative sum
 DD DD 2 2 kmeans sum
 DD DD 2 2 agglomerative sum
 DD DD 2 4 kmeans sum
