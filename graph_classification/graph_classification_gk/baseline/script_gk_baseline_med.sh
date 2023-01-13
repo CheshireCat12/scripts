@@ -5,9 +5,9 @@
 
 #SBATCH --mem-per-cpu=20G
 #SBATCH --cpus-per-task=10
-#SBATCH --time=4-00:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_gk_on_baseline_med_%A_%a.out
-#SBATCH --array=1-2
+#SBATCH --array=1-3
 
 param_store=./arguments_gk_baseline_med.txt
 

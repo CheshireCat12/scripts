@@ -5,9 +5,9 @@
 
 #SBATCH --mem-per-cpu=25G
 #SBATCH --cpus-per-task=8
-#SBATCH --time=4-00:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --output=/storage/homefs/ag21k209/neo_slurms/classification_ged_on_baseline_med_%A_%a.out
-#SBATCH --array=1-5
+#SBATCH --array=1-3
 
 param_store=./arguments_ged_on_baseline_med.txt
 
@@ -21,7 +21,7 @@ module load Python/3.9.5-GCCcore-10.3.0.lua
 cd $HOME/graph_library/graph_classification/graph-classification-ged/
 source venv/bin/activate
 
-for i in 183 929 1195 2489
+for i in 1 183 929 1195 2489
 do
    srun python main.py --root_dataset $SCRATCH/data/$dataset_save/baseline --n_cores 8 --seed $i --save_gt_labels --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/baseline/$i -v
 done

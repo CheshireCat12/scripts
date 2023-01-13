@@ -1,17 +1,120 @@
-Mutagenicity MUTAGENICTY
-NCI1 NCI1
-NCI109 NCI109
-NCI-H23H NCI-H23H
-DD DD
-ENZYMES ENZYMES
-PROTEINS_full PROTEINS
-FIRSTMM_DB FIRSTMM_DB
-MSRC_9 MSRC_9
-MSRC_21 MSRC_21
-COLLAB COLLAB
-github_stargazers github_stargazers
-REDDIT-BINARY REDDIT-BINARY
-REDDIT-MULTI-5K REDDIT-MULTI-5K
-REDDIT-MULTI-12K REDDIT-MULTI-12K
-COLORS-3 COLORS-3
-SYNTHETIC SYNTHETIC
+BZR BZR 2 2 kmeans sum
+BZR BZR 2 2 agglomerative sum
+BZR BZR 2 4 kmeans sum
+BZR BZR 2 4 agglomerative sum
+BZR BZR 2 8 kmeans sum
+BZR BZR 2 8 agglomerative sum
+BZR BZR 2 16 kmeans sum
+BZR BZR 2 16 agglomerative sum
+BZR BZR 3 2 kmeans sum
+BZR BZR 3 2 agglomerative sum
+BZR BZR 3 4 kmeans sum
+BZR BZR 3 4 agglomerative sum
+BZR BZR 3 8 kmeans sum
+BZR BZR 3 8 agglomerative sum
+BZR BZR 3 16 kmeans sum
+BZR BZR 3 16 agglomerative sum
+BZR BZR 4 2 kmeans sum
+BZR BZR 4 2 agglomerative sum
+BZR BZR 4 4 kmeans sum
+BZR BZR 4 4 agglomerative sum
+BZR BZR 4 8 kmeans sum
+BZR BZR 4 8 agglomerative sum
+BZR BZR 4 16 kmeans sum
+BZR BZR 4 16 agglomerative sum
+BZR BZR 5 2 kmeans sum
+BZR BZR 5 2 agglomerative sum
+BZR BZR 5 4 kmeans sum
+BZR BZR 5 4 agglomerative sum
+BZR BZR 5 8 kmeans sum
+BZR BZR 5 8 agglomerative sum
+BZR BZR 5 16 kmeans sum
+BZR BZR 5 16 agglomerative sum
+BZR BZR 8 2 kmeans sum
+BZR BZR 8 2 agglomerative sum
+BZR BZR 8 4 kmeans sum
+BZR BZR 8 4 agglomerative sum
+BZR BZR 8 8 kmeans sum
+BZR BZR 8 8 agglomerative sum
+BZR BZR 8 16 kmeans sum
+BZR BZR 8 16 agglomerative sum
+DHFR DHFR 2 2 kmeans sum
+DHFR DHFR 2 2 agglomerative sum
+DHFR DHFR 2 4 kmeans sum
+DHFR DHFR 2 4 agglomerative sum
+DHFR DHFR 2 8 kmeans sum
+DHFR DHFR 2 8 agglomerative sum
+DHFR DHFR 2 16 kmeans sum
+DHFR DHFR 2 16 agglomerative sum
+DHFR DHFR 3 2 kmeans sum
+DHFR DHFR 3 2 agglomerative sum
+DHFR DHFR 3 4 kmeans sum
+DHFR DHFR 3 4 agglomerative sum
+DHFR DHFR 3 8 kmeans sum
+DHFR DHFR 3 8 agglomerative sum
+DHFR DHFR 3 16 kmeans sum
+DHFR DHFR 3 16 agglomerative sum
+DHFR DHFR 4 2 kmeans sum
+DHFR DHFR 4 2 agglomerative sum
+DHFR DHFR 4 4 kmeans sum
+DHFR DHFR 4 4 agglomerative sum
+DHFR DHFR 4 8 kmeans sum
+DHFR DHFR 4 8 agglomerative sum
+DHFR DHFR 4 16 kmeans sum
+DHFR DHFR 4 16 agglomerative sum
+DHFR DHFR 5 2 kmeans sum
+DHFR DHFR 5 2 agglomerative sum
+DHFR DHFR 5 4 kmeans sum
+DHFR DHFR 5 4 agglomerative sum
+DHFR DHFR 5 8 kmeans sum
+DHFR DHFR 5 8 agglomerative sum
+DHFR DHFR 5 16 kmeans sum
+DHFR DHFR 5 16 agglomerative sum
+DHFR DHFR 8 2 kmeans sum
+DHFR DHFR 8 2 agglomerative sum
+DHFR DHFR 8 4 kmeans sum
+DHFR DHFR 8 4 agglomerative sum
+DHFR DHFR 8 8 kmeans sum
+DHFR DHFR 8 8 agglomerative sum
+DHFR DHFR 8 16 kmeans sum
+DHFR DHFR 8 16 agglomerative sum
+Peking_1 PEKING_1 2 2 kmeans sum
+Peking_1 PEKING_1 2 2 agglomerative sum
+Peking_1 PEKING_1 2 4 kmeans sum
+Peking_1 PEKING_1 2 4 agglomerative sum
+Peking_1 PEKING_1 2 8 kmeans sum
+Peking_1 PEKING_1 2 8 agglomerative sum
+Peking_1 PEKING_1 2 16 kmeans sum
+Peking_1 PEKING_1 2 16 agglomerative sum
+Peking_1 PEKING_1 3 2 kmeans sum
+Peking_1 PEKING_1 3 2 agglomerative sum
+Peking_1 PEKING_1 3 4 kmeans sum
+Peking_1 PEKING_1 3 4 agglomerative sum
+Peking_1 PEKING_1 3 8 kmeans sum
+Peking_1 PEKING_1 3 8 agglomerative sum
+Peking_1 PEKING_1 3 16 kmeans sum
+Peking_1 PEKING_1 3 16 agglomerative sum
+Peking_1 PEKING_1 4 2 kmeans sum
+Peking_1 PEKING_1 4 2 agglomerative sum
+Peking_1 PEKING_1 4 4 kmeans sum
+Peking_1 PEKING_1 4 4 agglomerative sum
+Peking_1 PEKING_1 4 8 kmeans sum
+Peking_1 PEKING_1 4 8 agglomerative sum
+Peking_1 PEKING_1 4 16 kmeans sum
+Peking_1 PEKING_1 4 16 agglomerative sum
+Peking_1 PEKING_1 5 2 kmeans sum
+Peking_1 PEKING_1 5 2 agglomerative sum
+Peking_1 PEKING_1 5 4 kmeans sum
+Peking_1 PEKING_1 5 4 agglomerative sum
+Peking_1 PEKING_1 5 8 kmeans sum
+Peking_1 PEKING_1 5 8 agglomerative sum
+Peking_1 PEKING_1 5 16 kmeans sum
+Peking_1 PEKING_1 5 16 agglomerative sum
+Peking_1 PEKING_1 8 2 kmeans sum
+Peking_1 PEKING_1 8 2 agglomerative sum
+Peking_1 PEKING_1 8 4 kmeans sum
+Peking_1 PEKING_1 8 4 agglomerative sum
+Peking_1 PEKING_1 8 8 kmeans sum
+Peking_1 PEKING_1 8 8 agglomerative sum
+Peking_1 PEKING_1 8 16 kmeans sum
+Peking_1 PEKING_1 8 16 agglomerative sum

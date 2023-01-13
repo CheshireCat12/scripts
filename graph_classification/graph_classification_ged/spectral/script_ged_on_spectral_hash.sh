@@ -26,11 +26,7 @@ module load Python/3.9.5-GCCcore-10.3.0.lua
 cd $HOME/graph_library/graph_classification/graph-classification-ged/
 source venv/bin/activate
 
-# !!!!!!!!
-# Don't forget to add 1 in the list of seeds
-# !!!!!!!!!!!
-
-for seed in 183 929 1195 2489
+for seed in 1 183 929 1195 2489
 do
-   srun python main.py --root_dataset $SCRATCH/data/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension --n_cores 8 --seed $seed --save_gt_labels --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/spectral/$seed/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension -v
+   srun python main.py --root_dataset $SCRATCH/data/$dataset_save/spectral/$clustering_algo/hash/red_fact$reduction/dimensions$dimension --n_cores 8 --seed $seed --save_gt_labels --save_predictions --save_distances --folder_results $HOME/graph_library/results/ged_classification/$dataset_save/spectral/$seed/$clustering_algo/hash/red_fact$reduction/dimensions$dimension -v
 done
