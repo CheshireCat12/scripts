@@ -25,4 +25,4 @@ module load Python/3.9.5-GCCcore-10.3.0.lua
 cd $HOME/graph_library/graph_classification/graph-classification-gnn/
 source venv/bin/activate
 
-srun python main.py --root_dataset $SCRATCH/data/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension --max-epochs 600 --n-trials 5 --n-inner-cv 3 --n-outer-cv 5 --n_cores-gs 2 --n-cores-cv 8 --folder_results $HOME/graph_library/results/gnn_classification/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension -v
+srun python main.py --root-dataset $SCRATCH/data/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension --max-epochs 600 --n-trials 5 --n-inner-cv 3 --n-outer-cv 5 --n_cores-gs 2 --n-cores-cv 8 --folder-results $HOME/graph_library/results/gnn_classification/$dataset_save/spectral/$clustering_algo/$merging_method/red_fact$reduction/dimensions$dimension -v
